@@ -10,13 +10,15 @@ export const NavBar = () => {
 
     const displayUserEmailIfAuthenticated = () => {
         return loggedInUser
-            ? <div className="signIn"> <UserProfile /> </div>
-            : <span className="signIn" onClick={() => history.push("/signin")}> Sign In</span>
+            ? <div className="signIn">Signed in as: <UserProfile /> </div>
+            : <span className="signIn" onClick={() => history.push("/login")}>
+                Sign In
+            </span>
     }
 
     return (
         <div className="navBarContainer">
-            <span className="navBarLogo" onClick={() => history.push("/")}>Cocktail Book</span> <br />
+            <span className="navBarLogo" onClick={() => history.push("/login")}>Cocktail Book</span> <br />
             {displayUserEmailIfAuthenticated()}
         </div >
     )

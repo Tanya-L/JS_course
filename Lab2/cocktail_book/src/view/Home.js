@@ -9,7 +9,7 @@ export const Home = () => {
 
     return (
         <div className="mainContainer">
-            <h1>Currently logIn user: {loggedInUser}</h1>
+            {/*<h1>Currently logged In user: {loggedInUser}</h1>*/}
             <h1>Welcome to Cocktail Application</h1>
             <Recipe />
         </div>

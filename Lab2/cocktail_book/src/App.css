@@ -36,7 +36,7 @@
 .profile-dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: lavender;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -57,11 +57,14 @@
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   padding: 1em;
+  background-color: lightgray;
 }
 
 .signIn {
   grid-column: 10/10;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 .navBarLogo {
@@ -71,11 +74,21 @@
 .card {
   text-align: center;
   align-items: center;
-  margin: auto;
   width: 100%;
   height: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.card-text {
+  text-align: justify;
+  padding: inherit;
+  margin: inherit;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
