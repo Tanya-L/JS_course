@@ -9,11 +9,11 @@ export const Recipe = ({ match, location }) => {
 
   useEffect(() => {
     if (cocktail == null && id) {
-      const url = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`;
+      const url = `http://localhost:7777/cocktails/?id=${id}`;
       fetch(url)
         .then((response) => response.json())
         .then((data) => {
-          setCocktail(data.drinks[0]);
+          setCocktail(data);
         });
     }
   }, [cocktail]);

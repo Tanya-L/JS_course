@@ -8,7 +8,7 @@ export const Card = ({ cocktail }) => {
       {!!cocktail && (
         <div className="card">
           <div className="card-body">
-            <a href={"recipe/" + cocktail.idDrink}>
+            <a href={"/recipe/" + cocktail.idDrink}>
               <h2 className="card-title">{cocktail.strDrink}</h2>
             </a>
             <p className="card-text">

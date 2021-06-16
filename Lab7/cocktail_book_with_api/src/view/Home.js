@@ -10,7 +10,7 @@ export const Home = () => {
 
   useEffect(() => {
     if (recipes == null) {
-      const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a`;
+      const url = `http://localhost:7777/cocktails/`;
       fetch(url)
         .then((response) => response.json())
         .then((data) => {
